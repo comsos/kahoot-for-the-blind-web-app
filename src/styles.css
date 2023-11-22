@@ -1,6 +1,102 @@
 @font-face {
-    font-family: 'kahoot';
-    src: url('../src/assets/montserrat-bold-webfont.woff2') format('woff2'),
-    url('../src/assets/montserrat-bold-webfont.woff') format('woff');
-        
+  font-family: "kahoot";
+  src: url("../src/assets/montserrat-regular-webfont.woff") format("woff"),
+    url("../src/assets/montserrat-regular-webfont.woff2") format("woff");
+}
+
+body {
+  font-family: "kahoot";
+}
+
+.test-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 10vh;
+  border-bottom: 1px solid black;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  font-weight: regular;
+  color: white;
+}
+
+.test-body {
+  height: 90vh;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+}
+
+.fixed-size-image {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.choice-container {
+  height: 30%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.choice {
+  border: 1px solid grey;
+  border-radius: 7px;
+  color: white;
+}
+
+.choice:nth-child(1) {
+  background-color: red;
+  filter: brightness(80%);
+}
+
+.choice:nth-child(2) {
+  background-color: blue;
+  filter: brightness(80%);
+}
+
+.choice:nth-child(3) {
+  background-color: green;
+  filter: brightness(80%);
+}
+
+.shape {
+  padding-top: 20px;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shape > div {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.shape > .triangle {
+  width: 0;
+  height: 0;
+  background-color: blue;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid white;
+}
+
+.choice-text {
+  padding: 1.5em;
+  font-size: 1.5rem;
+}
+
+.image-faded {
+  opacity: 0.8;
 }
