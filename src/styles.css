@@ -48,20 +48,21 @@ body {
   border: 1px solid grey;
   border-radius: 7px;
   color: white;
+  text-align: center;
 }
 
 .choice:nth-child(1) {
-  background-color: red;
+  background-color: rgb(133, 38, 38);
   filter: brightness(80%);
 }
 
 .choice:nth-child(2) {
-  background-color: blue;
+  background-color: rgb(35, 35, 128);
   filter: brightness(80%);
 }
 
 .choice:nth-child(3) {
-  background-color: green;
+  background-color: rgb(17, 104, 17);
   filter: brightness(80%);
 }
 
@@ -86,7 +87,7 @@ body {
 .shape > .triangle {
   width: 0;
   height: 0;
-  background-color: blue;
+  background-color: transparent;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
   border-bottom: 50px solid white;
